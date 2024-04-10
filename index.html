@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+        form button {
+            width: 250px;
+            padding: 5px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        form input {
+            margin: 10px 0 10px 0;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form autocomplete="off" id="cadastro">
+            <h2>crie uma nova conta</h2>
+            <input type="email" placeholder="email" id="emailCad">
+            <input type="password" placeholder="senha" id="senhaCad">
+            <input type="submit" id="cadastrar">
+        </form>
+        <form id="loginForm">
+            <h2>entre com uma conta já existente</h2>
+            <input type="text" placeholder="email" id="emailLogin">
+            <input type="password" placeholder="senha" id="senhaLogin">
+            <input type="submit" id="login">
+            <div>
+                <h2>ou</h2>
+                <button id="googleLog"> entre com o google </button>
+            </div>
+        </form>
+    </div>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
+
+<!-- project-22639946068 -->
